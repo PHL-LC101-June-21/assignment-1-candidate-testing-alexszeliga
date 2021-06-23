@@ -52,7 +52,7 @@ function gradeQuiz(candidateAnswers) {
   
   grade = (correctCount / correctAnswers.length);
 
-  return grade;
+  return Nubmer(grade);
 }
 
 function runProgram() {
