@@ -50,7 +50,7 @@ function gradeQuiz(candidateAnswers) {
     }
   }
   
-  grade = (correctCount / correctAnswers.length);
+  grade = (correctCount / correctAnswers.length) * 100;
 
   return Number(grade);
 }
@@ -64,9 +64,9 @@ function runProgram() {
   }
   let grade = gradeQuiz(this.candidateAnswers);
   if (grade >= 0.8) {
-    console.log(`You passed. Your score is ${(grade * 100) + "%"}`);
+    console.log(`You passed. Your score is ${(grade) + "%"}`);
   } else {
-    console.log(`Sorry, please try again, your score (${(grade * 100) + "%"}) was below our minimum threshold`);
+    console.log(`Sorry, please try again, your score (${(grade) + "%"}) was below our minimum threshold`);
   }
 }
 
